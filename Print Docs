@@ -1,0 +1,58 @@
+Sub PrintDocs()
+'
+' PrintDocs Macro
+' Print all Docs on active sheet
+'
+
+'
+    Range("A1:D29").Select
+    ActiveSheet.PageSetup.PrintArea = "$A$1:$D$29"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("F1:I29").Select
+    ActiveSheet.PageSetup.PrintArea = "$F$1:$I$29"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("A31:D59").Select
+    ActiveSheet.PageSetup.PrintArea = "$A$31:$D$59"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("F31:I59").Select
+    ActiveSheet.PageSetup.PrintArea = "$F$31:$I$59"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("A61:D89").Select
+    ActiveSheet.PageSetup.PrintArea = "$A$61:$D$89"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("F61:I89").Select
+    ActiveSheet.PageSetup.PrintArea = "$F$61:$I$89"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("A91:D119").Select
+    ActiveSheet.PageSetup.PrintArea = "$A$91:$D$119"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("F91:I119").Select
+    ActiveSheet.PageSetup.PrintArea = "$F$91:$I$119"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+        
+    Range("A121:D149").Select
+    ActiveSheet.PageSetup.PrintArea = "$A$121:$D$149"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+    
+    Range("F121:I149").Select
+    ActiveSheet.PageSetup.PrintArea = "$F$121:$I$149"
+    ActiveWindow.SelectedSheets.PrintOut Copies:=1, Collate:=True, _
+        IgnorePrintAreas:=False
+        
+End Sub
