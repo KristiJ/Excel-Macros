@@ -1,0 +1,177 @@
+Sub Finish_Formatting()
+'
+' Colors
+'
+    ' Comment
+Dim RowIndex As Integer
+
+RowIndex = 28
+
+Do While Not IsEmpty(Range("A" & RowIndex))
+
+If Range("I" & RowIndex).Value = "Text3" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .ThemeColor = xlThemeColorAccent6
+                .TintAndShade = -0.249977111117893
+                .PatternTintAndShade = 0
+            End With
+
+    ElseIf Range("I" & RowIndex).Value = "Text53" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .Color = 12611584
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+            
+    ElseIf Range("I" & RowIndex).Value = "Text52" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .Color = 12611584
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+            
+    ElseIf Range("I" & RowIndex).Value = "Text54" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .Color = 192
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+
+     ElseIf Range("I" & RowIndex).Value = "Text50" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .Color = 10498160
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+     
+     ElseIf Range("I" & RowIndex).Value = "Text51" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .Color = 15773696
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+        
+     ElseIf Range("I" & RowIndex).Value = "Text23" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .ThemeColor = xlThemeColorDark1
+                .TintAndShade = -0.249977111117893
+                .PatternTintAndShade = 0
+            End With
+            
+     ElseIf Range("I" & RowIndex).Value = "Text55" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .ThemeColor = xlThemeColorDark1
+                .TintAndShade = -0.249977111117893
+                .PatternTintAndShade = 0
+            End With
+            
+     ElseIf Range("I" & RowIndex).Value = "Text34" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .ThemeColor = xlThemeColorDark1
+                .TintAndShade = -0.249977111117893
+                .PatternTintAndShade = 0
+            End With
+     
+     ElseIf Range("I" & RowIndex).Value = "Text35" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .ThemeColor = xlThemeColorDark1
+                .TintAndShade = -0.249977111117893
+                .PatternTintAndShade = 0
+            End With
+     
+     ElseIf Range("I" & RowIndex).Value = "Text9" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .ThemeColor = xlThemeColorDark1
+                .TintAndShade = -0.249977111117893
+                .PatternTintAndShade = 0
+            End With
+     
+     ElseIf Range("I" & RowIndex).Value = "Text4" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .Color = 16711935
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+            
+     ElseIf Range("I" & RowIndex).Value = "Text52" Then
+        Range("I" & RowIndex).Select
+            With Selection.Interior
+                .Pattern = xlSolid
+                .PatternColorIndex = xlAutomatic
+                .Color = 15773696
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+            
+            
+    ElseIf IsEmpty(Range("A" & RowIndex)) Then
+        Exit Do
+
+End If
+
+RowIndex = RowIndex + 1
+
+Loop
+
+'Comment
+Dim RowIndexBottom As Integer
+Dim RowIndexTop As Integer
+
+RowIndexBottom = 28
+RowIndexTop = 10
+
+Do While Not IsEmpty(Range("A" & RowIndexBottom))
+
+     If Range("I" & RowIndexBottom).Value = "Text2" Then
+        Range("D" & RowIndexTop).Value = Range("B" & RowIndexBottom).Value
+        RowIndexTop = RowIndexTop + 1
+        
+    ElseIf RowIndexTop > 22 Then
+        Exit Do
+        
+    ElseIf IsEmpty(Range("A" & RowIndexBottom)) Then
+        Exit Do
+
+End If
+
+RowIndexBottom = RowIndexBottom + 1
+
+Loop
+
+End Sub
